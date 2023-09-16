@@ -1,0 +1,44 @@
+
+POST http://localhost:3000/api/v1/users
+Content-Type: application/json
+
+{
+    "firstName": "Klaus",
+    "lastName": "Meine",
+    "email": "Klaus@gg.com",
+    "password": "12345678"
+}
+
+### Login
+POST http://localhost:3000/api/v1/login
+Content-Type: application/json
+
+{
+    "email": "kundu@gg.com",
+    "password": "12345678"
+}
+###
+GET http://localhost:3000/api/v1/data
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQmlzaGFsICBLdW5kdSB9IiwiZW1haWwiOiJrdW5kdUBnZy5jb20iLCJpYXQiOjE2OTQ3Nzc1NjMsImV4cCI6MTY5NDc4MTE2M30.7jXaP31ScSInXnsUyFmp_ZrKxyUOYYITGUPMOyEiGto
+
+###
+POST http://localhost:3000/api/v1/data
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQmlzaGFsICBLdW5kdSB9IiwiZW1haWwiOiJrdW5kdUBnZy5jb20iLCJpYXQiOjE2OTQ3Nzc1NjMsImV4cCI6MTY5NDc4MTE2M30.7jXaP31ScSInXnsUyFmp_ZrKxyUOYYITGUPMOyEiGto
+
+{
+    "body": "Wind of change"
+}
+
+###
+PATCH http://localhost:3000/api/v1/data/65043d57b7ed0c05fef56742
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQmlzaGFsICBLdW5kdSB9IiwiZW1haWwiOiJrdW5kdUBnZy5jb20iLCJpYXQiOjE2OTQ3Nzc1NjMsImV4cCI6MTY5NDc4MTE2M30.7jXaP31ScSInXnsUyFmp_ZrKxyUOYYITGUPMOyEiGto
+
+{
+    "body": "Still Loving You"
+}
+
+###
+DELETE http://localhost:3000/api/v1/data/65043d69b7ed0c05fef56745
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQmlzaGFsICBLdW5kdSB9IiwiZW1haWwiOiJrdW5kdUBnZy5jb20iLCJpYXQiOjE2OTQ3Nzc1NjMsImV4cCI6MTY5NDc4MTE2M30.7jXaP31ScSInXnsUyFmp_ZrKxyUOYYITGUPMOyEiGto
